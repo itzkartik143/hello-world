@@ -11,7 +11,7 @@ dobelement.addEventListener("change", () => {
   let [y,m,d] = document.getElementById("dob").value.split("-");
   let dob = new Date(y,m,d);
   let Today = new Date();
-  age = validateAge(Today, dob);
+  let age = validateAge(Today, dob);
   if (age < 18 || age > 55) {
     dobelement.setCustomValidity("age must lie in 18 and 55 years!!!");
  
